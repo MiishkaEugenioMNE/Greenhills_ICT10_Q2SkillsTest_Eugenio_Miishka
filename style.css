@@ -1,0 +1,213 @@
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eaf2fa;
+    color: #263f5c;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Main Container */
+.main-container {
+    width: 100%;
+    max-width: 750px;
+}
+
+/* Header */
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    color: #5683ad;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.page-header h1 {
+    color: #163b63;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+
+.page-header p {
+    color: #7189a2;
+    font-size: 14px;
+}
+
+/* Element Tiles */
+.element-design {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.element-tile {
+    width: 95px;
+    height: 105px;
+    background: #ffffff;
+    border: 1px solid #c7d9eb;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(30, 70, 110, 0.06);
+    transition: 0.3s ease;
+}
+
+.element-tile:hover {
+    transform: translateY(-5px);
+    border-color: #5287b8;
+    box-shadow: 0 5px 15px rgba(30, 70, 110, 0.12);
+}
+
+.element-tile span {
+    font-size: 10px;
+    color: #7898b7;
+}
+
+.element-tile strong {
+    font-size: 27px;
+    color: #245b8e;
+}
+
+.element-tile small {
+    font-size: 10px;
+    color: #8294a7;
+}
+
+/* Finder Card */
+.finder-card {
+    background: #ffffff;
+    border: 1px solid #d5e2ef;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(30, 70, 110, 0.07);
+}
+
+.finder-card h2 {
+    color: #204e79;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.finder-card > p {
+    color: #8192a5;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+/* Search Input */
+.search-area {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#element_symbol {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #cbd9e7;
+    border-radius: 7px;
+    background: #f8fbff;
+    color: #263f5c;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#element_symbol:focus {
+    border-color: #5287b8;
+    box-shadow: 0 0 0 3px rgba(82, 135, 184, 0.12);
+}
+
+#element_symbol::placeholder {
+    color: #9aabba;
+}
+
+/* Button */
+input[type="button"] {
+    width: 100%;
+    padding: 14px;
+    background: #245b8e;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    background: #163b63;
+}
+
+/* Output */
+#output {
+    margin-top: 22px;
+    padding: 20px;
+    background: #f3f8fd;
+    border: 1px solid #dce8f3;
+    border-radius: 8px;
+    color: #36536f;
+    font-size: 14px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+#output h1,
+#output h2,
+#output h3 {
+    color: #204e79;
+    margin-bottom: 12px;
+}
+
+#output p {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #91a4b8;
+    font-size: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .finder-card {
+        padding: 25px 20px;
+    }
+
+    .element-tile {
+        width: 75px;
+        height: 90px;
+    }
+
+    .element-tile strong {
+        font-size: 23px;
+    }
+}
